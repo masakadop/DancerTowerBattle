@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dancer Tower Battle</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>🕺 Dancer Tower Battle 💃</h1>
+        <p>国際ダンスの日スペシャル。ダンサーを積み上げてハイスコアを目指そう！</p>
+      </header>
+
+      <section class="hud">
+        <div>スコア: <strong id="score">0</strong></div>
+        <div>残り時間: <strong id="time">60</strong>s</div>
+        <button id="startBtn">スタート</button>
+      </section>
+
+      <section class="board-wrap">
+        <canvas id="game" width="440" height="720" aria-label="game board"></canvas>
+      </section>
+
+      <section class="help">
+        <p>
+          操作: <kbd>←</kbd><kbd>→</kbd> で移動、<kbd>Space</kbd> で落下、<kbd>P</kbd> で一時停止。
+        </p>
+        <p>
+          画像スプライトは <code>assets/dancers-sheet.png</code>（添付ダンサー画像）を想定。<br />
+          このリポジトリでは GitHub Pages で配布しやすいように静的構成にしています。
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
