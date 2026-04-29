@@ -28,4 +28,11 @@ python3 -m http.server 8080
 
 1. GitHub リポジトリの `Settings > Pages` を開く
 2. Source を `GitHub Actions` に設定
-3. `main` ブランチに push すると自動公開
+3. `main` または `master` ブランチに push すると自動公開
+
+
+## デプロイ失敗時のチェック
+
+- `Settings > Pages` の Source が **GitHub Actions** になっているか
+- push 先ブランチが `main` / `master` のいずれかか
+- Actions の失敗ログで `deploy-pages` ジョブを開き、エラー内容（権限 / 設定 / アーティファクト）を確認
